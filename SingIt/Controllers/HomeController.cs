@@ -26,5 +26,12 @@ namespace SingIt.Controllers
 
             return View();
         }
+
+        public ActionResult Rules()
+        {
+            ViewBag.Message = "Your Rules Page";
+
+            return View();
+        }
     }
 }
