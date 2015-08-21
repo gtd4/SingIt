@@ -20,8 +20,9 @@ namespace SingIt.Models
 
         public int SongId { get; set; }
         public virtual ApplicationUser singer { get; set; }
+        public virtual ICollection<Vote> votes { get; set; }
         public string Title { get; set; }
-        public string VoteCount { get; set; }
+        
 
     }
 }
