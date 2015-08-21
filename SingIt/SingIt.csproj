@@ -192,10 +192,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508212203058_initialMigration.cs" />
+    <Compile Include="Migrations\201508212203058_initialMigration.Designer.cs">
+      <DependentUpon>201508212203058_initialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508212213013_addingVotesTable.cs" />
+    <Compile Include="Migrations\201508212213013_addingVotesTable.Designer.cs">
+      <DependentUpon>201508212213013_addingVotesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508212216485_addingVoteTable.cs" />
+    <Compile Include="Migrations\201508212216485_addingVoteTable.Designer.cs">
+      <DependentUpon>201508212216485_addingVoteTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Entries.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\SongModel.cs" />
+    <Compile Include="Models\VideoListItemViewModel.cs" />
+    <Compile Include="Models\VoteModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -270,6 +285,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Rules.cshtml" />
+    <Content Include="Views\Shared\VideoListBox.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -277,6 +293,17 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201508212203058_initialMigration.resx">
+      <DependentUpon>201508212203058_initialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508212213013_addingVotesTable.resx">
+      <DependentUpon>201508212213013_addingVotesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508212216485_addingVoteTable.resx">
+      <DependentUpon>201508212216485_addingVoteTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

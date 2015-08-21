@@ -1,0 +1,16 @@
+﻿We want a video image block
+Title
+Sung by
+vote button
+@model SingIt.Models.VideoListItemViewModel
+
+<div class="col-lg-4">
+    <img id="@Model.UserName" alt="@Model.UserName + @Model.SongTitle" src="http://placehold.it/350x150" />
+    <p>
+        @Model.SongTitle
+    </p>
+    <p>
+        @Model.UserName
+    </p>
+
+</div>
