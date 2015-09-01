@@ -21,6 +21,7 @@ namespace SingIt.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Contact()
         {
             var model = new ContactUsViewModel();
@@ -28,12 +29,14 @@ namespace SingIt.Controllers
         }
 
         [HttpPost]
-        public ActionResult ContactSend(ContactUsViewModel model)
+        public ActionResult Contact(ContactUsViewModel model)
         {
+
             var name = model.Name;
             var email = model.EmailAddress;
             var message = model.Message;
-            return View();
+            return View(model);
+
         }
 
         public ActionResult Rules()
