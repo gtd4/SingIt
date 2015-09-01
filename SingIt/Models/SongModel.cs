@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,7 @@ namespace SingIt.Models
     {
 
         public int SongId { get; set; }
-        public virtual ApplicationUser singer { get; set; }
+        public virtual User singer { get; set; }
         public virtual ICollection<Vote> votes { get; set; }
         public string Title { get; set; }
         
