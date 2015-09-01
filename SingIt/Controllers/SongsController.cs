@@ -63,7 +63,8 @@ namespace SingIt.Controllers
                 {
                     song.singer = singer;
                 }
-             
+
+                song.DateCreated = DateTime.Now;
                 db.Songs.Add(song);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -80,6 +81,7 @@ namespace SingIt.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Song song = db.Songs.Find(id);
+            song.DateModified = DateTime.Now;
             if (song == null)
             {
                 return HttpNotFound();

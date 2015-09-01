@@ -209,6 +209,10 @@
     <Compile Include="Migrations\201508212237407_addedRelationshipforvoteandsong.Designer.cs">
       <DependentUpon>201508212237407_addedRelationshipforvoteandsong.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201509010820196_AddDatesToSongModel.cs" />
+    <Compile Include="Migrations\201509010820196_AddDatesToSongModel.Designer.cs">
+      <DependentUpon>201509010820196_AddDatesToSongModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -317,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508212237407_addedRelationshipforvoteandsong.resx">
       <DependentUpon>201508212237407_addedRelationshipforvoteandsong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509010820196_AddDatesToSongModel.resx">
+      <DependentUpon>201509010820196_AddDatesToSongModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
