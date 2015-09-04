@@ -65,9 +65,11 @@ namespace SingIt.Controllers
                 }
 
                 song.DateCreated = DateTime.Now;
+                song.DateModified = DateTime.Now;
                 db.Songs.Add(song);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                
+                return View("EntrySuccess");
             }
 
             return View(song);
